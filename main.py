@@ -4,11 +4,11 @@ import pyttsx3
 import mymusic
 import time
 import requests
-from client import gemini_process_command  # ✅ Import from client.py
+from client import gemini_process_command  
 
 engine = pyttsx3.init()
 
-newsapi = "08e34d4fc1324ddb90d39ac1c5fe70d4"  # Optional: move to config.py if you want
+newsapi = "your_api_key"  
 
 def speak(text):
     engine.say(text)
@@ -97,3 +97,4 @@ if __name__ == "__main__":
 
         except Exception as e:
             print("Error:", e)
+
